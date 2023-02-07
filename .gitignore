@@ -38,3 +38,6 @@ next-env.d.ts
 .env
 /logs/
 /plugins/
+
+dags/__pycache__
+.pyc
