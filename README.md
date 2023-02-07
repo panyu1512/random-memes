@@ -3,6 +3,8 @@
     <h2>Web que muestra random memes scrapeados cada 30 segundos.</h2>
 </div>
 
+![Mockup Web](public/mockup.png)
+
 <details>
   <summary>Sumario</summary>
   <ol>
@@ -32,7 +34,7 @@ Para acceder al frontend: http://localhost:3000
 
 ## Tecnologías usadas
 
-Para obtener memes randoms, usamos *Web Scraping*, utilizando [beautifulsoup](https://pypi.org/project/beautifulsoup4/) para extraer el contenido html de la página de memes -> https://www.generatormix.com/random-memes.
+Para obtener memes randoms, usamos *Web Scraping*, utilizando [beautifulsoup](https://pypi.org/project/beautifulsoup4/) para extraer el contenido html de la página de memes [generatormix](https://www.generatormix.com/random-memes). Con [Airflow](https://www.airflow.es/) programaremos una tarea para que haga el scrapeo cada 30 segundos. 
 
 La página web está desarrollada con el framework [NextJs](https://nextjs.org/docs/deployment) y utilizando TypeScript.
 
