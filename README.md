@@ -29,8 +29,8 @@ docker-compose up airflow-init
 docker-compose up
 ```
 
-Para acceder a Airflow: http://localhost:8080/ (Usuario: airflow, Contraseña airflow)
-Para acceder al frontend: http://localhost:3000 
+- Para acceder a Airflow: http://localhost:8080/ (Usuario: airflow, Contraseña airflow)
+- Para acceder al frontend: http://localhost:3000 
 
 ## Tecnologías usadas
 
