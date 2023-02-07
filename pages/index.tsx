@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
+import Icon from '@/components/icon'
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.title}>Random Memes Every 30 Seconds</h1>
+        <h1 className={styles.title}><Icon></Icon> RANDOM MEMES EVERY 30 SECONDS <Icon></Icon></h1>
       </main>
     </>
   )
