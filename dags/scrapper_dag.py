@@ -37,7 +37,7 @@ def scrape_random_memes():
 with DAG(
     dag_id='twitter_scrapper',
     start_date=days_ago(2),
-    schedule_interval=None,
+    schedule_interval=timedelta(seconds=30),
     catchup=False,
 ) as dag:
     scrape_random_memes = PythonOperator(
