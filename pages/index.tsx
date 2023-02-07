@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import Icon from '@/components/icon'
+import Card from '@/components/card'
+import memes from '@/db/memes.json'
 
 export default function Home() {
   return (
@@ -11,8 +13,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <main className={styles.main}>
+      <main>
         <h1 className={styles.title}><Icon></Icon> RANDOM MEMES EVERY 30 SECONDS <Icon></Icon></h1>
+        <div className={styles.cards}>
+          {
+            memes.map((meme, index) => {
+              return (
+                <Card key={index} title={meme.title} src_img={meme.img}></Card>
+              )
+            })
+          }
+        </div>
       </main>
     </>
   )

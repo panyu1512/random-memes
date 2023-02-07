@@ -23,7 +23,7 @@ def scrape_random_memes():
     for meme_element in memes_elements:
         print(meme_element)
         meme = {}
-        meme['title'] = meme_element.find('h3').text
+        meme['title'] = meme_element.find('h3').text.upper()
         src = meme_element.find('img')['data-src']
         img = url + src
         meme['img'] = img

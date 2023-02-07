@@ -4,4 +4,19 @@
     justify-content: center;
     margin-top: 50px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* title responsive */
+@media screen and (max-width: 768px){
+    .title{
+        font-size: 1.5rem;
+    }
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
 }
