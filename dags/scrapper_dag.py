@@ -31,7 +31,7 @@ def scrape_random_memes():
 
     # save into db folder as json
     with open('db/memes.json', 'w') as f:
-        json.dump(memes, f)
+        json.dump(memes, f, indent=2)
     
 
 with DAG(
