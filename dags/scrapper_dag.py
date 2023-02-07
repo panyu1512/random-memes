@@ -1,4 +1,5 @@
 import requests
+import json
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 from airflow.models import Variable
@@ -28,7 +29,10 @@ def scrape_random_memes():
         meme['img'] = img
         memes.append(meme)
 
-    print(memes)
+    # save into db folder as json
+    with open('db/memes.json', 'w') as f:
+        json.dump(memes, f)
+    
 
 with DAG(
     dag_id='twitter_scrapper',
